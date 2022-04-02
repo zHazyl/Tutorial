@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block title %}View all books{% endblock %}
+{% block content %}
+    {% for item in values %}
+        <image src={{item.link_img}} style="width:100px;height:100px;">
+        <p>Name: {{item.name}}, Price: {{item.price}}</p>
+    {% endfor %}
+{% endblock %}
